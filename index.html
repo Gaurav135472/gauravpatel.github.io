@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Specifies the document type and language, setting it as HTML5 and language as English.
+         Helps browsers understand the document structure and content language. -->
+    <meta charset="UTF-8">
+    <!-- Sets the character encoding to UTF-8, ensuring support for most languages and symbols. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the page that displays on the browser tab or search engine results. -->
+    <title>Data Analyst Portfolio - Gaurav Patel</title>
+
+    <!-- External CSS links for Bootstrap (CSS framework) and a custom stylesheet (styles.css).
+         Bootstrap enables responsive design and UI components; styles.css provides custom styles. -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar for the portfolio. Contains links to major sections like Education, Skills, Projects, etc.
+         Uses Bootstrap for responsiveness, adjusting layout based on screen size. -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+        <div class="container">
+            <!-- Brand logo or title linked to the top section of the page for quick access.
+                 Positioned on the left side, with "ml-auto" to push it left on larger screens. -->
+            <a class="navbar-brand ml-auto" href="#home" style="margin-right: auto;">Data Analyst Portfolio</a> 
+            
+            <!-- Toggle button to collapse/expand navbar items on smaller screens, such as mobiles. 
+                 Collapses links into a dropdown when screen width reduces for a compact display. -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Container for navigation links, collapsible on smaller screens for mobile-friendly navigation.
+                 Links to different pages or sections of the portfolio. -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav"> 
+                <ul class="navbar-nav">
+                    <!-- Individual nav items for each section, including Education, Skills, Projects, etc.
+                         Uses "nav-link" class to style links consistently with Bootstrap’s navbar design. -->
+                    <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section: Main introductory section with a profile image, name, and professional summary.
+         Provides an overview of Gaurav's professional skills, expertise, and career goals. -->
+    <section id="home" class="text-center p-5 bg-light">
+        <!-- Displays Gaurav's profile picture as a circular image with a short margin below.
+             Adds a personal touch to the portfolio by showing the author’s photo. -->
+        <img src="images/MyPic.jpg" alt="Gaurav Patel's Photo" class="rounded-circle mb-4" style="width: 150px;">
+        
+        <!-- Header for name and main introductory paragraph providing a brief overview.
+             Offers viewers a concise introduction to Gaurav’s background and expertise. -->
+        <h1>Gaurav Patel</h1>
+        <p>
+            <!-- Brief paragraph summarizing Gaurav’s educational background, skillset, and professional experience.
+                 Highlights strengths in data analysis, programming, and web design for visitor context. -->
+            I am a multifaceted professional with a strong foundation in data analytics, software development, and web design. A graduate of Mohawk College in Software Development, I bring expertise in data structures, algorithms, and cloud computing to tackle complex projects with precision and a solutions-driven approach. With advanced skills in Python, SQL, Tableau, Excel, and Power BI, I excel in dissecting complex datasets to uncover trends, drive informed decision-making, and deliver actionable insights. My experience spans customer segmentation, predictive modeling, and business intelligence reporting, while proficiency in HTML, CSS, and JavaScript allows me to craft intuitive, user-centric applications that enhance the digital experience.
+        </p>
+        <br>
+        <p>
+            <!-- Additional paragraph describing future career goals and the direction Gaurav aims to pursue.
+                 Focuses on aspirations in data science and AI to showcase commitment to continued learning. -->
+            As I progress in my career, I am dedicated to expanding my expertise in data science, machine learning, and artificial intelligence, bridging analytical rigor with innovative design to develop intelligent, scalable applications that drive performance. Passionate about harmonizing functionality with aesthetics, I strive to create solutions that not only align with organizational objectives but also empower stakeholders with impactful, data-driven insights for sustained success.
+        </p>
+        
+        <!-- Button that links to the resume page, allowing visitors to view Gaurav’s resume in detail.
+             Styled with a dark button theme to match the portfolio's design scheme. -->
+        <a href="resume.html" class="btn btn-dark mt-3" target="_blank">View Resume</a> 
+    </section>
+
+    <!-- Education Section: Provides information on education and certifications to highlight qualifications.
+         Features a grid layout with images, titles, and brief details for each educational achievement. -->
+    <section id="education" class="p-5 bg-white">
+        <div class="container">
+            <h2 class="text-center">Education & Certifications</h2>
+            <div class="row text-center mt-4">
+                <!-- First column: Mohawk College Diploma image, title, and description to display key achievements.
+                     Each section is styled for consistency and responsiveness. -->
+                <div class="col-md-4">
+                    <img src="images/mohawk_college.jpg" class="img-fluid rounded img-uniform" alt="Mohawk College">
+                    <h5><a href="https://www.mohawkcollege.ca/programs/technology/computer-systems-technician-software-support-548-558" target="_blank" class="">Diploma in Software Development</a></h5>
+                    <p>Mohawk College, Canada</p>
+                </div>
+                <!-- Second column: Apna College certification details.
+                     Image, title, and description to highlight key certifications and skills acquired. -->
+                <div class="col-md-4">
+                    <img src="images/apna_college.png" class="img-fluid rounded img-uniform" alt="Apna College">
+                    <h5><a href="https://www.apnacollege.in/" target="_blank" class="">Data Analytics Certification</a></h5>
+                    <p>Apna College, India</p>
+                </div>
+                <!-- Third column: Microsoft Azure Certification details.
+                     Certification from a reputed organization, validating cloud computing skills. -->
+                <div class="col-md-4">
+                    <img src="images/azure.png" class="img-fluid rounded img-uniform" alt="Azure Certification">
+                    <h5><a href="https://www.mohawkcollege.ca/programs/technology/computer-systems-technician-software-support-548-558" target="_blank" class="">Azure Cloud Certification</a></h5>
+                    <p>Microsoft</p>
+                </div>
+            </div>
+            <!-- Button to link to more education details on another page.
+                 Directs users to additional educational information if they wish to explore further. -->
+            <div class="text-right mt-3">
+                <a href="education.html" class="btn btn-dark">More Education</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section: Displays key skills across programming, data analysis, and web design.
+         Each skill set is displayed in card format with icons, titles, and details for quick comprehension. -->
+    <section id="skills" class="p-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Skills</h2>
+            <div class="row mt-4">
+                <!-- Card: Programming Skills, detailing languages and core programming knowledge.
+                     Highlights programming versatility with a list of languages and frameworks. -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="images/programing_lang.webp" alt="Programming Icon" class="img-fluid mb-3 img-uniform">
+                            <h5 class="card-title">Programming</h5>
+                            <p class="card-text">Python, Java, C, C++, C#.net, DSA</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card: Data Analysis Skills, showcasing analytical tools and libraries.
+                     Reflects proficiency in data analytics with tools like Tableau, Power BI, etc. -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="images/data_analysis_and_visualization.jpg" alt="Data Analysis Icon" class="img-fluid mb-3 img-uniform">
+                            <h5 class="card-title">Data Analysis & Visualization</h5>
+                            <p class="card-text">Statistical Analysis, Data Wrangling, Tableau, Power BI, Matplotlib, Seaborn</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card: Web Design Skills, detailing languages and frameworks for front-end development.
+                     Highlights front-end expertise useful for data-driven and user-focused applications. -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="images/Web_design.jpg" alt="Web Design Icon" class="img-fluid mb-3 img-uniform">
+                            <h5 class="card-title">Web Design Skills</h5>
+                            <p class="card-text">HTML5, CSS3, JavaScript, SQL, PHP, MERN</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Button linking to a page with more detailed skill descriptions.
+                 Allows users to explore the complete skill set beyond the core highlights displayed here. -->
+            <div class="text-right mt-4">
+                <a href="skills.html" class="btn btn-dark">More Skills</a> 
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section: Displays sample projects with images, titles, and descriptions for each.
+         Organized in a three-column layout to showcase multiple projects in a compact, visual format. -->
+    <section id="projects" class="p-5 bg-white">
+        <div class="container">
+            <h2 class="text-center">Projects</h2>
+            <div class="row text-center mt-4">
+                <!-- FIFA Data Analysis Project: Image, title, and description summarizing the project.
+                     Demonstrates applied data analysis skills and interest in sports analytics. -->
+                <div class="col-md-4">
+                    <img src="images/fifa_project.jpg" class="img-fluid rounded img-uniform" alt="FIFA Project">
+                    <h5><a href="https://github.com/Gaurav135472/fifa_world_cupdata">FIFA Data Analysis</a></h5>
+                    <p>Analyzed FIFA player data to uncover trends in player performance.</p>
+                </div>
+                <!-- Customer Churn Prediction Project: Highlights predictive analytics skills.
+                     Useful in various business domains to reduce churn and improve customer retention. -->
+                <div class="col-md-4">
+                    <img src="images/customer_churn.jpg" class="img-fluid rounded img-uniform" alt="Customer Churn">
+                    <h5><a href="https://github.com/Gaurav135472/Customer_churn">Customer Churn Prediction</a></h5>
+                    <p>Built a predictive model to identify potential customer churn in the retail industry.</p>
+                </div>
+                <!-- Sales Data Dashboard Project: Interactive dashboard showcasing visualization skills.
+                     Combines SQL and Power BI to create a data-driven, business-friendly application. -->
+                <div class="col-md-4">
+                    <img src="images/sql_project.jpg" class="img-fluid rounded img-uniform" alt="SQL Project">
+                    <h5><a href="https://github.com/Gaurav135472/home_rental_project">Sales Data Dashboard</a></h5>
+                    <p>Developed an interactive sales dashboard using SQL and Power BI.</p>
+                </div>
+            </div>
+            <!-- Button linking to additional projects for viewers who want more examples of work.
+                 Helps users see a wider range of expertise if they are interested. -->
+            <div class="text-right mt-4">
+                <a href="projects.html" class="btn btn-dark">More Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section with contact links and section links for easy navigation.
+         Contains copyright notice and quick navigation to major sections. -->
+    <footer class="text-center p-4 bg-dark text-light">
+        <p>© 2023 Gauravkumar Patel</p>
+        <!-- Links to main sections in a compact, footer-friendly format to facilitate navigation. -->
+        <a href="#home" class="text-light">Home</a> | 
+        <a href="#education" class="text-light">Education</a> | 
+        <a href="#skills" class="text-light">Skills</a> | 
+        <a href="#projects" class="text-light">Projects</a> | 
+        <a href="#resume" class="text-light">Resume</a> | 
+        <a href="#contact" class="text-light">Contact</a>
+    </footer>
+
+    <!-- JavaScript files for Bootstrap, jQuery, and Popper.js to enable responsive design and interactivity.
+         Essential for responsive navbar, dropdowns, and other Bootstrap components. -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 
+        Sets the character encoding to UTF-8 for proper display of characters.
+        The viewport meta tag ensures the page scales correctly on different devices, 
+        enabling a responsive layout for both mobile and desktop views.
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Gauravkumar Patel</title>
+
+    <!-- 
+        Include Bootstrap CSS for styling and responsive design.
+        Bootstrap helps quickly create a clean, modern, and consistent layout for the webpage.
+    -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Custom styles for this page, including layout adjustments and text formatting -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .resume-section {
+            padding: 50px 0;
+        }
+
+        .section-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        .sub-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .resume-item {
+            margin-bottom: 30px;
+        }
+
+        .resume-item h5 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .resume-item p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .project-link {
+            color: #007bff;
+            text-decoration: underline;
+        }
+
+        .skills-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .skills-list li {
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            margin-bottom: 40px;
+        }
+
+        .contact-info span {
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        .container {
+            max-width: 900px;
+        }
+
+        .download-btn {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 
+        Navigation bar at the top of the page.
+        Provides links to different sections of the portfolio, including Education, Skills, Projects, Resume, and Contact.
+        The navbar is responsive and collapses on smaller screens to save space, with a toggler button to open it.
+    -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand ml-auto" href="index.html" style="margin-right: auto;">Data Analyst Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="resume.html">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 
+        Main Resume Section
+        Contains structured details about the user's resume, including contact information, objective, education, work experience, skills, certifications, and projects.
+    -->
+    <section class="resume-section">
+        <div class="container">
+            <!-- Download Button for Resume -->
+            <div class="text-right download-btn">
+                <a href="Gauravkumar_resume.docx" class="btn btn-primary" download>Download Resume</a>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <h2>Gauravkumar Patel</h2>
+                <span><strong>Email:</strong> gauravpatel7777g@gmail.com</span>
+                <span><strong>Phone:</strong> (519)-731-9032</span>
+                <span><strong>Location:</strong> Ontario, Canada</span>
+                <span><strong>LinkedIn:</strong> <a href="#">LinkedIn Profile</a></span>
+            </div>
+
+            <!-- Objective Section: Brief introduction about career goals -->
+            <div class="resume-item">
+                <h5 class="section-title">Objective</h5>
+                <p>
+                    Analytical and detail-oriented Data Analyst with a background in computer science and full-stack development. Experienced in analyzing large datasets, building data-driven solutions, and utilizing Python, SQL, and data visualization tools to drive actionable insights and decision-making. Seeking to apply technical and analytical expertise to deliver data-driven results in a dynamic business environment.
+                </p>
+            </div>
+
+            <!-- Education Details -->
+            <div class="resume-item">
+                <h5 class="section-title">Education</h5>
+                <h5>Mohawk College, Hamilton (December 2024)</h5>
+                <p>Diploma in Computer System Technology - Software Development</p>
+                <p><strong>Relevant Coursework:</strong> Data Science, Data Structures & Algorithms, Database Management, Python Programming, Machine Learning, Project Management</p>
+            </div>
+
+            <!-- Work Experience -->
+            <div class="resume-item">
+                <h5 class="section-title">Work Experience</h5>
+
+                <!-- Position 1: Data Analysis Project at McDonald's -->
+                <div class="sub-title">Data Analysis Project - McDonald's (January 2023 – Current)</div>
+                <p>Hamilton, ON</p>
+                <ul class="skills-list">
+                    <li>Led analysis of service efficiency, utilizing data to identify areas of improvement, increasing service speed by 20%.</li>
+                    <li>Developed reports on inventory levels, optimizing stock management through predictive analysis to reduce food waste by 15%.</li>
+                    <li>Utilized data visualization tools (Excel, Tableau) to present insights to senior management, contributing to operational enhancements.</li>
+                </ul>
+
+                <!-- Position 2: Team Leader at Burger King -->
+                <div class="sub-title">Team Leader - Burger King (April 2023 – October 2023)</div>
+                <p>Hamilton, ON</p>
+                <ul class="skills-list">
+                    <li>Analyzed team performance data, generating weekly reports that improved efficiency and reduced customer complaints by 25%.</li>
+                    <li>Identified key performance metrics to track and improve service quality, driving repeat business through data-driven strategies.</li>
+                </ul>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="resume-item">
+                <h5 class="section-title">Skills</h5>
+                <ul class="skills-list">
+                    <li><strong>Programming Languages & Frameworks:</strong> Python, Pandas, NumPy, Flask, Django, Java (Spring), C, C++, C#.NET, MERN stack (MongoDB, Express.js, React.js, Node.js).</li>
+                    <li><strong>Data Analysis & Visualization:</strong> EDA, Feature Engineering, Data Wrangling (Pandas), Statistical Analysis (Matplotlib, Seaborn), Data Visualization (Tableau, Power BI).</li>
+                    <li><strong>Machine Learning & AI:</strong> Supervised/Unsupervised Learning, Scikit-learn, TensorFlow (CNNs, RNNs), Model Optimization (Grid Search, Cross-validation).</li>
+                    <li><strong>Time Series Analysis:</strong> ARIMA, Exponential Smoothing, Seasonal Decomposition, Time-lag Features, Rolling Statistics.</li>
+                    <li><strong>Web Development:</strong> HTML5, CSS3, JavaScript (React.js, Node.js), Tailwind CSS, WordPress, MERN stack.</li>
+                    <li><strong>Cloud Computing & DevOps:</strong> AWS (EC2, S3, Lambda, RDS), Microsoft Azure (App Services, SQL, Functions), Docker, CI/CD Pipelines (Jenkins, GitHub Actions).</li>
+                    <li><strong>Tools & Collaboration:</strong> Git, GitHub, Postman (API testing), VS Code, Visual Studio, Jira, Confluence.</li>
+                </ul>
+            </div>
+
+            <!-- Certifications Section -->
+            <div class="resume-item">
+                <h5 class="section-title">Certifications</h5>
+                <ul class="skills-list">
+                    <li>Introduction to Programming Using HTML and CSS - Udemy</li>
+                    <li>Introduction to Programming Using Python - Udemy</li>
+                    <li>MySQL Database Development Mastery - Udemy</li>
+                    <li>Digital Marketing & E-commerce - Google Career Certificates</li>
+                    <li>Project Management Support Certificate - Google Career Certificates</li>
+                </ul>
+            </div>
+
+            <!-- Projects Section -->
+            <div class="resume-item">
+                <h5 class="section-title">Projects</h5>
+                
+                <!-- Project 1: Wanderlust - Rental Platform -->
+                <div class="sub-title">Wanderlust - Data-Driven Rental Platform</div>
+                <p><a href="https://gaurav-firstproject-rentalhome.onrender.com" class="project-link">Wanderlust Rental Platform</a></p>
+                <p>Built a data-driven rental platform using MERN stack. Incorporated analytics to track user engagement, improving booking rates by 25%.</p>
+
+                <!-- Project 2: Paytm Clone - Financial Data Management -->
+                <div class="sub-title">Paytm Clone - Financial Data Management</div>
+                <p><a href="https://github.com/Gaurav135472/Paytm.git" class="project-link">Paytm Financial Management Platform</a></p>
+                <p>Developed a financial management platform with a focus on transactional data processing, implemented using React.js, Node.js, and MongoDB.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+        Footer with navigation links to key sections of the portfolio, styled with a dark background.
+        Provides a consistent layout across the site and helps users navigate to other important sections.
+    -->
+    <footer class="text-center p-4 bg-dark text-light">
+        <p>© 2023 Gauravkumar Patel</p>
+        <a href="index.html#home" class="text-light">Home</a> | 
+        <a href="index.html#education" class="text-light">Education</a> | 
+        <a href="skills.html" class="text-light">Skills</a> | 
+        <a href="projects.html" class="text-light">Projects</a> | 
+        <a href="resume.html" class="text-light">Resume</a> | 
+        <a href="index.html#contact" class="text-light">Contact</a>
+    </footer>
+
+    <!-- 
+        Bootstrap JavaScript libraries and dependencies.
+        These scripts enable interactive elements like the responsive navbar and modals to function properly.
+    -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

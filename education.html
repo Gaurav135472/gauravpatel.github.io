@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for setting character encoding and ensuring responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Gaurav Patel</title>
+
+    <!-- Link to Bootstrap CSS for styling and layout -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- Link to external CSS file for additional custom styles -->
+    <link rel="stylesheet" href="styles.css"> <!-- Reuse your existing styles.css -->
+</head>
+
+<body>
+
+    <!-- Navbar (consistent across the site for easy navigation) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <!-- Website Brand Name / Logo with link to home page -->
+            <a class="navbar-brand ml-auto" href="index.html" style="margin-right: auto;">Data Analyst Portfolio</a> 
+            
+            <!-- Mobile menu button for small screens -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Collapsible navigation items for easy access to different pages -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li> <!-- Link to Resume -->
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content: Education Section -->
+    <section id="education" class="p-5 bg-light">
+        <div class="container">
+            <!-- Section Title -->
+            <h1 class="text-center mb-5">Educational Background</h1>
+
+            <!-- Row for displaying educational cards -->
+            <div class="row">
+
+                <!-- Card 1: Diploma in Software Support -->
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <!-- Image representing Mohawk College -->
+                        <img src="images/mohawk_college.jpg" class="card-img-top img-uniform" alt="Mohawk College">
+                        <div class="card-body">
+                            <h5 class="card-title">Diploma Software Support</h5>
+                            <p class="card-text">
+                                <strong>Institution:</strong> Mohawk College, Canada <br>
+                                <strong>Duration:</strong> Jan 2023 - Dec 2024
+                            </p>
+                            <p>Experience and knowledge with a broad range of experience in software application development, database management systems and development tools.</p>
+                            <!-- Link to more information about the diploma -->
+                            <a href="https://www.mohawkcollege.ca/programs/technology/computer-systems-technician-software-support-548-558" target="_blank" class="btn btn-dark btn-block">View Diploma</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Data Analytics Certification -->
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <!-- Image representing Apna College -->
+                        <img src="images/apna_college.png" class="card-img-top img-uniform" alt="Apna College">
+                        <div class="card-body">
+                            <h5 class="card-title">Data Analytics Certification</h5>
+                            <p class="card-text">
+                                <strong>Institution:</strong> Apna College, India <br>
+                                <strong>Year of Completion:</strong> May 2023 - Aug 2023
+                            </p>
+                            <p>This certification focused on analyzing large datasets with Tableau, Power BI, and Excel, helping organizations make data-driven decisions.</p>
+                            <!-- Link to download or view the certification -->
+                            <a href="apna-certification-link.pdf" target="_blank" class="btn btn-dark btn-block">View Certification</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Azure Cloud Certification -->
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <!-- Image representing Azure certification -->
+                        <img src="images/azure.png" class="card-img-top img-uniform" alt="Azure Certification">
+                        <div class="card-body">
+                            <h5 class="card-title">Azure Cloud Certification</h5>
+                            <p class="card-text">
+                                <strong>Issued by:</strong> Microsoft <br>
+                                <strong>Year of Completion:</strong> Jan 2024
+                            </p>
+                            <p>This certification provided a strong foundation in cloud computing services using Microsoft Azure, allowing me to implement data solutions in the cloud.</p>
+                            <!-- Link to download or view the Azure certification -->
+                            <a href="azure-certification-link.pdf" target="_blank" class="btn btn-dark btn-block">View Certification</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- End of row for cards -->
+        </div>
+    </section>
+
+    <!-- Footer (consistent across the site for navigation and info) -->
+    <footer class="text-center p-4 bg-dark text-light">
+        <p>© 2023 Gauravkumar Patel</p>
+        <!-- Navigation links within the footer -->
+        <a href="index.html#home" class="text-light">Home</a> | 
+        <a href="index.html#education" class="text-light">Education</a> | 
+        <a href="index.html#skills" class="text-light">Skills</a> | 
+        <a href="index.html#projects" class="text-light">Projects</a> | 
+        <a href="resume-link.pdf" class="text-light" target="_blank">Resume</a> | 
+        <a href="index.html#contact" class="text-light">Contact</a>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies for interactivity and responsive behavior -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

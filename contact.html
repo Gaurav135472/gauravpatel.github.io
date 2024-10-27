@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character set and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Gauravkumar Patel</title>
+
+    <!-- Link to Bootstrap CSS for styling and responsive design -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Custom CSS styling for the contact form and layout -->
+    <style>
+        /* Base body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa; /* Light gray background color */
+        }
+
+        /* Padding for the contact section */
+        .contact-section {
+            padding: 50px 0;
+        }
+
+        /* Styling for the section title */
+        .section-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #007bff; /* Primary Bootstrap blue color */
+        }
+
+        /* Contact information block styling */
+        .contact-info {
+            margin-bottom: 40px;
+        }
+
+        /* Each contact info item */
+        .contact-info span {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        /* Input fields' styling for better UI */
+        .form-control {
+            margin-bottom: 20px;
+        }
+
+        /* Styling for the multi-step contact form */
+        .contact-form {
+            background-color: #fff; /* White background */
+            padding: 30px;
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+            position: relative;
+        }
+
+        /* Button styling to make it full width */
+        .btn-primary {
+            width: 100%;
+        }
+
+        /* Set a maximum width for the container to keep layout centered */
+        .container {
+            max-width: 800px;
+        }
+
+        /* Progress bar container styling */
+        .progressbar {
+            display: flex;
+            justify-content: space-between;
+            counter-reset: step;
+            margin-bottom: 30px;
+        }
+
+        /* Individual progress bar steps */
+        .progressbar li {
+            list-style: none; /* Remove default list styling */
+            width: 100%;
+            text-align: center;
+            position: relative;
+            color: #007bff; /* Primary Bootstrap blue color */
+        }
+
+        /* Style for the circle before each step */
+        .progressbar li:before {
+            counter-increment: step;
+            content: counter(step);
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            border: 2px solid #007bff; /* Blue border */
+            display: block;
+            text-align: center;
+            margin: 0 auto 10px;
+            border-radius: 50%; /* Circular shape */
+            background-color: white; /* White background */
+        }
+
+        /* Connecting lines between steps */
+        .progressbar li:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #007bff; /* Blue color for active steps */
+            top: 15px;
+            left: -50%; /* Position line to connect with previous step */
+            z-index: -1; /* Behind the circles */
+        }
+
+        /* Remove line before the first step */
+        .progressbar li:first-child:after {
+            content: none;
+        }
+
+        /* Active step styles for progress bar */
+        .progressbar li.active:before {
+            background-color: #007bff; /* Blue background */
+            color: white; /* White text */
+        }
+
+        .progressbar li.active:after {
+            background-color: #007bff; /* Blue line */
+        }
+
+        /* Default hidden state for form steps */
+        .step {
+            display: none;
+        }
+
+        /* Show active step */
+        .step.active {
+            display: block;
+        }
+
+        /* Success and error message styling */
+        .success-message {
+            color: green;
+            display: none;
+            margin-top: 20px;
+        }
+
+        .error-message {
+            color: red;
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar for navigation links -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <!-- Website Brand Name / Logo -->
+            <a class="navbar-brand ml-auto" href="index.html" style="margin-right: auto;">Data Analyst Portfolio</a>
+
+            <!-- Mobile menu button for responsive behavior -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsible navbar content with navigation links -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <h1 class="section-title text-center">Contact Me</h1>
+
+            <!-- Progress Bar to guide users through multi-step form -->
+            <ul class="progressbar">
+                <li class="active">Email</li>
+                <li>Message</li>
+                <li>Submit</li>
+            </ul>
+
+            <div class="row">
+                <!-- Static contact information block -->
+                <div class="col-md-6">
+                    <div class="contact-info">
+                        <span><strong>Email:</strong> gauravpatel7777g@gmail.com</span>
+                        <span><strong>Phone:</strong> (519)-731-9032</span>
+                        <span><strong>Location:</strong> Ontario, Canada</span>
+                        <span><strong>Address:</strong> 1234 Example Street, Hamilton, Ontario, Canada</span>
+                    </div>
+                </div>
+
+                <!-- Multi-Step Contact Form -->
+                <div class="col-md-6">
+                    <form class="contact-form" id="multiStepForm">
+                        <!-- Step 1: Collect user's email -->
+                        <div class="step active">
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                            <button type="button" class="btn btn-primary" id="nextBtn1">Next</button>
+                        </div>
+
+                        <!-- Step 2: Collect user's message -->
+                        <div class="step">
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="button" class="btn btn-primary" id="nextBtn2">Next</button>
+                        </div>
+
+                        <!-- Step 3: Submit confirmation -->
+                        <div class="step">
+                            <p>Review your details and click submit to send your message.</p>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+
+                        <!-- Display messages upon success or failure -->
+                        <div class="success-message" id="successMessage">Thank you! Your message has been sent successfully.</div>
+                        <div class="error-message" id="errorMessage">Oops! Something went wrong. Please try again.</div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer with navigation links and additional information -->
+    <footer class="text-center p-4 bg-dark text-light">
+        <p>© 2023 Gauravkumar Patel</p>
+        <a href="index.html#home" class="text-light">Home</a> | 
+        <a href="index.html#education" class="text-light">Education</a> | 
+        <a href="skills.html" class="text-light">Skills</a> | 
+        <a href="projects.html" class="text-light">Projects</a> | 
+        <a href="resume.html" class="text-light">Resume</a> | 
+        <a href="contact.html" class="text-light">Contact</a>
+    </footer>
+
+    <!-- Bootstrap JavaScript and dependencies (jQuery, Popper.js) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Link to the external JavaScript file for handling form logic -->
+    <script src="app.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic metadata and title for the Skills page -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Gaurav Patel</title>
+    
+    <!-- Including Bootstrap for responsive design and custom styles for consistency -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Inline CSS for additional styling specific to this page -->
+    <style>
+        /* Custom styles for enhancing the Skills page layout */
+        .skill-section {
+            margin-bottom: 50px; /* Adds spacing between skill categories */
+        }
+
+        .skill-title {
+            font-size: 24px; /* Larger font for clear section titles */
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .skill-description {
+            font-size: 18px; /* Easy-to-read font size for skill descriptions */
+            line-height: 1.7; /* Improved readability */
+        }
+
+        /* Unordered list styles for skills */
+        .skill-list {
+            list-style: none;
+            padding-left: 0; /* Remove default list padding */
+        }
+
+        .skill-list li {
+            margin-bottom: 20px; /* Adds space between individual skills */
+        }
+
+        /* Custom bullet points using CSS */
+        .skill-list li::before {
+            content: "\2022"; /* Unicode for a bullet */
+            color: #007bff; /* Blue color for visual consistency */
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em; /* Aligns bullet points with text */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar to navigate to other sections of the portfolio -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <!-- Branding link to navigate back to the homepage -->
+            <a class="navbar-brand ml-auto" href="index.html" style="margin-right: auto;">Data Analyst Portfolio</a>
+            
+            <!-- Mobile responsive navbar toggle button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Collapsible navigation links -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Skills Section: Detailed overview of skills and technologies -->
+    <section id="skills" class="p-5 bg-light">
+        <div class="container">
+            <h1 class="text-center mb-5">My Skills</h1>
+
+            <!-- Section for Programming Skills with details -->
+            <div class="skill-section">
+                <h2 class="skill-title">Programming Skills</h2>
+                <p class="skill-description">
+                    I have a strong foundation in programming, focusing on creating robust applications and automating workflows. Below are the primary languages and frameworks I have expertise in:
+                </p>
+                <ul class="skill-list">
+                    <li><strong>Python:</strong> Proficient in building data analysis pipelines, automating tasks, and developing web applications using libraries like Pandas and NumPy for data manipulation, and frameworks like Flask and Django for web development.</li>
+                    <li><strong>Java & Spring Framework:</strong> Skilled in developing scalable enterprise applications and microservices using Java and the Spring Boot framework. Proficiency in multithreading and concurrency for high-performance applications.</li>
+                    <li><strong>C, C++, C#.NET:</strong> Expertise in system-level programming with C and C++, focusing on memory management and optimizing performance-critical code. Experience with C#.NET for building large-scale enterprise software.</li>
+                    <li><strong>Data Structures and Algorithms (DSA):</strong> In-depth understanding of core data structures (linked lists, trees, graphs) and algorithms (sorting, searching), solving optimization problems, and improving efficiency.</li>
+                </ul>
+            </div>
+
+            <!-- Section for Data Analysis & Visualization -->
+            <div class="skill-section">
+                <h2 class="skill-title">Data Analysis & Visualization</h2>
+                <p class="skill-description">
+                    I specialize in transforming raw data into actionable insights using statistical analysis, data wrangling, and visualization tools.
+                </p>
+                <ul class="skill-list">
+                    <li><strong>Exploratory Data Analysis (EDA) & Feature Engineering:</strong> Proficient in EDA techniques for exploring large datasets and uncovering key insights. Expertise in creating new data features, handling missing values, and transforming variables to improve model accuracy.</li>
+                    <li><strong>Statistical Analysis & Data Wrangling:</strong> Skilled in applying descriptive statistics, correlation analysis, and hypothesis testing. Experienced in using Pandas for data cleaning, merging datasets, and preparing data for analysis.</li>
+                    <li><strong>Data Visualization (Matplotlib, Seaborn, Tableau, Power BI):</strong> Extensive experience in building visualizations using Python libraries and creating interactive dashboards with Tableau and Power BI for real-time insights.</li>
+                </ul>
+            </div>
+
+            <!-- Section for Web Design & Development -->
+            <div class="skill-section">
+                <h2 class="skill-title">Web Design & Development</h2>
+                <p class="skill-description">
+                    My expertise covers front-end and back-end development, focusing on creating responsive, user-friendly websites and scalable web applications.
+                </p>
+                <ul class="skill-list">
+                    <li><strong>HTML5 & CSS3:</strong> Proficient in building responsive, mobile-friendly websites with modern HTML5 semantics and CSS3 styling, ensuring accessibility, cross-browser compatibility, and SEO best practices.</li>
+                    <li><strong>JavaScript (ReactJS, Node.js):</strong> Experience in developing dynamic web applications using ReactJS for front-end and Node.js for back-end. Proficient in building reusable UI components and efficient server-side scripts.</li>
+                    <li><strong>MERN Stack:</strong> Skilled in full-stack development using MongoDB, Express.js, ReactJS, and Node.js. Experience building RESTful APIs, handling databases, and developing complex single-page applications.</li>
+                </ul>
+            </div>
+
+            <!-- Section for Cloud Computing -->
+            <div class="skill-section">
+                <h2 class="skill-title">Cloud Computing</h2>
+                <p class="skill-description">
+                    My cloud computing expertise involves deploying, managing, and scaling applications on cloud platforms, with a focus on cost efficiency, performance optimization, and security.
+                </p>
+                <ul class="skill-list">
+                    <li><strong>Microsoft Azure:</strong> Skilled in deploying web applications, databases, and machine learning models using Azure services like App Services, Azure SQL, and Azure Functions.</li>
+                    <li><strong>AWS (Amazon Web Services):</strong> Experience with AWS cloud services such as EC2 for scalable virtual servers, S3 for secure object storage, and Lambda for serverless computing.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer consistent with the rest of the site for uniform design -->
+    <footer class="text-center p-4 bg-dark text-light">
+        <p>© 2023 Gauravkumar Patel</p>
+        <a href="index.html#home" class="text-light">Home</a> | 
+        <a href="index.html#education" class="text-light">Education</a> | 
+        <a href="skills.html" class="text-light">Skills</a> | 
+        <a href="index.html#projects" class="text-light">Projects</a> | 
+        <a href="resume-link.pdf" class="text-light" target="_blank">Resume</a> | 
+        <a href="index.html#contact" class="text-light">Contact</a>
+    </footer>
+
+    <!-- Scripts for Bootstrap functionality and interactivity -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

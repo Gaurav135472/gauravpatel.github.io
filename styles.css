@@ -1,0 +1,13 @@
+/* Ensure uniform image size across all sections except the profile */
+.img-uniform {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Add space below buttons */
+.mt-4, .mt-3 {
+    margin-bottom: 20px; /* Adds more space below the buttons */
+}

@@ -1,2 +1,2 @@
-# gauravpatel.github.io
-This is the portfolio file
+# GauravPatel.github.io
+ 

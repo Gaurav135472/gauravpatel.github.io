@@ -58,8 +58,7 @@
 
         /* Ensures images maintain consistent sizing */
         .flip-card-front img {
-            width: 100%; 
-            height: auto; 
+            height: 200px; 
         }
 
         /* Styling for the project heading above the image */
@@ -120,6 +119,12 @@
             margin-bottom: 50px; /* Space below the title */
             font-weight: bold; /* Bold for prominence */
         }
+        .hori_link{
+            display: flex;
+        }
+        .hori_link a{
+            margin-left: 15px;
+        }
     </style>
 </head>
 
@@ -161,8 +166,54 @@
         <div class="container">
             <!-- Main title of the Projects page -->
             <h1 class="page-title">Projects</h1>
-
             <div class="row">
+                <div class="col-md-4">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <!-- Front face of the flip card displaying project title and image -->
+                            <div class="flip-card-front">
+                                <h5 class="project-heading">Real Estate Insights and Price Prediction Model</h5>
+                                <img src="images/real-estate-analytics_integrations.webp" alt="Customer Segmentation Project">
+                            </div>
+                            <!-- Back face showing more details about the project -->
+                            <div class="flip-card-back">
+                                <h2 class="project-title">Real Estate Insights and Price Prediction Model</h2>
+                                <p class="project-description">
+                                    A data-driven analysis of the real estate market, focusing on trends, pricing patterns, and predictive modeling to forecast property values. The project uses advanced visualization and statistical methods to provide actionable insights for market analysis.
+                                </p>
+                                <p class="project-technologies">Python, Pandas, NumPy, Matplotlib, Seaborn, Data Analysis, Predictive Analytics, Data Visualization, Machine Learning.</p>
+                                <!-- Link to the GitHub repository -->
+                                 <div class="hori_link">
+                                    <a href="http://3.88.131.151:8501/" class="project-link" target="_blank">Explore the Project</a>
+                                    <a href="https://github.com/Gaurav135472/real_estate_capstone_project" class="project-link" target="_blank">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <!-- Front face of the flip card displaying project title and image -->
+                            <div class="flip-card-front">
+                                <h5 class="project-heading">Personalized Music Recommendation Engine</h5>
+                                <img src="images/spotify.jpeg" alt="Customer Segmentation Project">
+                            </div>
+                            <!-- Back face showing more details about the project -->
+                            <div class="flip-card-back">
+                                <h2 class="project-title">Personalized Music Recommendation Engine</h2>
+                                <p class="project-description">
+                                    A machine learning-based recommendation system designed to enhance Spotify user experience by analyzing listening habits and predicting song preferences. The project employs advanced data processing techniques and predictive modeling to deliver personalized music recommendations.
+                                </p>
+                                <p class="project-technologies">Python, Pandas, NumPy, Scikit-learn, Machine Learning, Data Preprocessing, Feature Engineering, Model Evaluation.</p>
+                                <!-- Link to the GitHub repository -->
+                                <a href="https://github.com/Gaurav135472/Recomendation_system_spotify" class="project-link" target="_blank">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Project 1: Customer Churn Analysis -->
                 <div class="col-md-4">
                     <div class="flip-card">
